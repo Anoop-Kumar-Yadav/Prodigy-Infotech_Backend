@@ -178,7 +178,7 @@ Python’s built-in `dict` type is used as an in-memory storage mechanism.
 
 ```python
 users = {}
-users[user_id] = {"name": "Alice", "email": "alice@example.com", "age": 30}
+users[user_id] = {"name": "Anoop", "email": "anoop@example.com", "age": 22}
 ```
 
 ---
@@ -243,9 +243,9 @@ def delete_user(user_id: str):
 
 ```json
 {
-  "name": "John Doe",
-  "email": "john@example.com",
-  "age": 30
+  "name": "Anoop Yadav",
+  "email": "anoop@example.com",
+  "age": 22
 }
 ```
 
