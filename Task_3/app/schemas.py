@@ -1,10 +1,10 @@
-
 from pydantic import BaseModel, EmailStr
 
 class UserRegister(BaseModel):
     name: str
     email: EmailStr
     password: str
+    age: int
     role: str = "user"
 
 class UserLogin(BaseModel):
@@ -17,5 +17,6 @@ class UserOut(BaseModel):
     email: EmailStr
     role: str
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True
+    }
