@@ -1,4 +1,4 @@
-# app/main.py
+
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app import models, schemas, crud
@@ -8,7 +8,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Dependency to get DB session
+
 def get_db():
     db = SessionLocal()
     try:

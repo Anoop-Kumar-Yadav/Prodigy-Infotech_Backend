@@ -1,11 +1,11 @@
-# app/crud.py
+
 from sqlalchemy.orm import Session
 from uuid import uuid4
 from . import models, schemas
 from fastapi import HTTPException
 
 def create_user(db: Session, user: schemas.UserCreate):
-    # Check if email exists
+
     existing = db.query(models.User).filter(models.User.email == user.email).first()
     if existing:
         raise HTTPException(status_code=400, detail="Email already exists")
