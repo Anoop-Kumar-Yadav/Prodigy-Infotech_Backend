@@ -235,3 +235,21 @@ def get_users(db: Session = Depends(get_db)):
 ```
 
 ---
+
+## Summary
+
+| Term/Tool            | Role                                                       |
+| -------------------- | ---------------------------------------------------------- |
+| **FastAPI**          | Framework to build the API                                 |
+| **Uvicorn**          | ASGI web server to run FastAPI app                         |
+| **SQLAlchemy**       | ORM for Python to interact with databases                  |
+| **Alembic**          | Manages schema changes in the DB (migrations)              |
+| **Pydantic**         | Validates input data and structures responses              |
+| **python-dotenv**    | Loads sensitive variables from `.env` into the code        |
+| **Declarative Base** | Declares all table models                                  |
+| **SessionLocal**     | Manages connections between API routes and the DB          |
+| **UUID**             | Generates safe, unique IDs for users                       |
+| **HTTPException**    | Used to return structured errors like 404                  |
+| **Depends**          | Automatically provides database sessions to route handlers |
+
+---
